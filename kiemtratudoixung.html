@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let str1 = prompt("nhap chuoi:");
+
+function isPalindrom(str1){
+    for(let i=0;i<=str1.length;i++){
+        if(str1[i]===str1[str1.length-i-1]){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+}
+if (isPalindrom(str1)===1){
+    document.write(str1 + " is Palindrom");
+}else if(isPalindrom(str1)===0){
+    document.write(str1 +" is not ");
+}
+</script>
+</body>
+</html>
